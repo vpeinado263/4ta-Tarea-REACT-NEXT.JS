@@ -1,7 +1,7 @@
 //Paso 1 - Importar la funcion creadora de contexto (createContext())
-import { createContext, useState} from "react"
+import { createContext, useState} from "react";
 
-//Paso 2 - crear el contexto (aka La nave)
+//Paso 2 - crear el contexto (aca La nave)
 
 export const BookContext = createContext() 
 
@@ -39,4 +39,4 @@ const BooksContextProvider = (props) => {
   )
 }
 
-export default BooksContextProvider
+export default BooksContextProvider;
