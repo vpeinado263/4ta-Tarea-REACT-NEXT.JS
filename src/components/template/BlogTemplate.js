@@ -18,7 +18,7 @@ const BlogTemplate = () => {
         comentarios: {/*"comentarios: ¡Qué interesante! Me encantaría aprender más sobre la historia de los relojes."*/},
     };
     useEffect(() => {
-        setPost(data[recurso]);
+        setPost(datos[recurso]);
 } , [recurso]);
 
   return (

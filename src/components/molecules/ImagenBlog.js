@@ -1,9 +1,9 @@
-import styles from "./imageBlog.module.css";
+import styles from "./imagenBlog.module.css";
 
-const ImagenBlog = ({}) => {
+const ImagenBlog = ({src, alt}) => {
   return (
     <div className={styles.imageContainer}>
-      <img src="" alt="" className={styles.image}/>
+      <img src={src} alt={alt} className={styles.image}/>
     </div>
   )
 }
