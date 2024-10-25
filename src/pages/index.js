@@ -1,3 +1,4 @@
+import Blog from "@/components/Blog";
 import Head from "next/head";
 
 export default function Home() {

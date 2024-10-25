@@ -13,7 +13,7 @@ const Blog = () => {
     comentarios: "comentarios: ¡Qué interesante! Me encantaría aprender más sobre la historia de los relojes.",
   }
 
-  useEffect(() => { setContenido(data[recurso]);},[recurso]);
+  useEffect(() => { setContenido(datos[recurso]);},[recurso]);
   //Actualiza el contenido
 
   return (
