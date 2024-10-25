@@ -1,4 +1,4 @@
-button {
+.button {
          color: white;
          background-color: rgb(52, 131, 250);
          border: none;
@@ -9,7 +9,7 @@ button {
          transition: 0.3s;
          margin: auto;
         }       
-button:hover {
+.button:hover {
         transform: translateY(2px);
         box-shadow: none;
         background-color: rgb(41, 104, 200);
