@@ -1,4 +1,3 @@
-import RelojEffect from "@/components/RelojEffect";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Blog/>
-     <RelojEffect/>
     </>
   );
 }

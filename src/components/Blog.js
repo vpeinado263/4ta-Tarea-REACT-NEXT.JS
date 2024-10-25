@@ -13,7 +13,8 @@ const Blog = () => {
     comentarios: "comentarios: ¡Qué interesante! Me encantaría aprender más sobre la historia de los relojes.",
   }
 
-  useEffect(() => {}, [recurso])
+  useEffect(() => { setContenido(data[recurso]);},[recurso]);
+  //Actualiza el contenido
 
   return (
     <>
@@ -22,7 +23,8 @@ const Blog = () => {
         <button onClick={() => setRecurso("usuarios")}>Usuario</button>
         <button onClick={() => setRecurso("comentarios")}>Comentarios</button>
       </div>
-      <h2>{recurso}</h2>
+      <h2>{recurso.toUpperCase()}</h2>
+      <p>{contenido}</p>
     </>
   )
 }
