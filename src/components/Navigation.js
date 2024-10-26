@@ -1,16 +1,52 @@
-import Link from "next/link"
-
-
+import Link from "next/link";
 
 const Navigation = () => {
   return (
     <>
-      <nav>
-        <Link href="/">Inicio</Link>
-        <Link  href="/servicios">Servicios</Link>
-      </nav>
-    </>
-  )
-}
+      <div className="mobile-menu">
+        <nav className="menu-toggle">
+          <Link href="/">
+            <span className="bar">Inicio</span>
+          </Link>
+          <Link href="/servicios">
+            <span className="bar">Servicios</span>
+          </Link>
+        </nav>
+      </div>
 
-export default Navigation
+      <style jsx>{`
+        .mobile-menu {
+          display: flex;
+          align-items: center;
+          font-family: 'Roboto', sans-serif;
+          background-color: rgb(229, 229, 229);
+         
+        }
+
+        .menu-toggle {
+          background: none;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          gap: 20px; /* Espacio entre enlaces */
+          padding: 10px;
+        }
+
+        .bar {
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          text-decoration: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+
+        .bar:hover {
+          background-color: blue; 
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default Navigation;
