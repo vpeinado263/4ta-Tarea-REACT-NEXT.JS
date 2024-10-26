@@ -2,6 +2,7 @@ import Blog from "@/components/Blog";
 import Books from "@/components/Books";
 import Navigation from "@/components/Navigation";
 import RelojEffect from "@/components/RelojEffect";
+import RelojEf from "@/components/rolex";
 import BooksContextProvider, { BookContext } from "@/context/BooksContextProvider";
 import Head from "next/head";
 
@@ -22,6 +23,7 @@ export default function Home() {
         <RelojEffect/>
         <Books/>
       </BooksContextProvider>
+     <RelojEf/>
       </main>
     </>
   );

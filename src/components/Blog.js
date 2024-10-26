@@ -24,41 +24,6 @@ const Blog = () => {
       </div>
       <h2 className="blog-title">{recurso.toUpperCase()}</h2>
       <p className="blog-content">{contenido}</p>
-
-      <style jsx>{`
-        .button-container {
-          display: flex;
-          gap: 10px;
-          margin-bottom: 20px;
-        }
-
-        .blog-button {
-          background-color: #0070f3;
-          color: #fff;
-          padding: 10px 15px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 1em;
-          transition: background-color 0.3s;
-        }
-
-        .blog-button:hover {
-          background-color: #005bb5;
-        }
-
-        .blog-title {
-          font-size: 1.8em;
-          color: #333;
-          margin-top: 0;
-        }
-
-        .blog-content {
-          font-size: 1.1em;
-          color: #555;
-          line-height: 1.6;
-        }
-      `}</style>
     </>
   );
 };
