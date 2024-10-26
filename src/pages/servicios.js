@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import ServiceBooks from '@/components/ServiceBooks'
+import BooksContextProvider from '@/context/BooksContextProvider'
 import Head from 'next/head'
 import React from 'react'
 
@@ -12,8 +13,11 @@ const servicios = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation/>
-      <ServiceBooks/>
+      
+      <BooksContextProvider>
+        <Navigation/>
+        <ServiceBooks/>
+      </BooksContextProvider>
     </>
   )
 }
