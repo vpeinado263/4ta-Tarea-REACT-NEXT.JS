@@ -3,25 +3,24 @@ import Link from "next/link";
 const Navigation = () => {
   return (
     <>
-      <div className="mobile-menu">
-        <nav className="menu-toggle">
+      <div className="menu">
+        <nav className="sub">
           <Link href="/">
             <span className="bar">Inicio</span>
           </Link>
-          <Link href="/servicios">
-            <span className="bar">Servicios</span>
+          <Link href="/relojPage">
+            <span className="bar">Reloj Analógico</span>
           </Link>
         </nav>
       </div>
-
       <style jsx>{`
-        .mobile-menu {
+        .menu {
           display: flex;
           align-items: center;
           font-family: 'Roboto', sans-serif;
           background-color: rgb(229, 229, 229);
         }
-        .menu-toggle {
+        .sub {
           background: none;
           border: none;
           cursor: pointer;
