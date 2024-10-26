@@ -20,9 +20,7 @@ const Navigation = () => {
           align-items: center;
           font-family: 'Roboto', sans-serif;
           background-color: rgb(229, 229, 229);
-         
         }
-
         .menu-toggle {
           background: none;
           border: none;
@@ -30,8 +28,8 @@ const Navigation = () => {
           display: flex;
           gap: 20px; /* Espacio entre enlaces */
           padding: 10px;
+          text-decoration: none;
         }
-
         .bar {
           color: rgb(255, 255, 255);
           font-weight: bold;
@@ -39,10 +37,11 @@ const Navigation = () => {
           padding: 10px 20px;
           border-radius: 5px;
           transition: background-color 0.3s ease;
+         
         }
-
         .bar:hover {
           background-color: blue; 
+          text-decoration: none;
         }
       `}</style>
     </>

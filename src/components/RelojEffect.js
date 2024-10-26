@@ -1,47 +1,82 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
-useState
-
-function Reloj({hora}) {
-    return <h3>{hora}</h3>
+function Reloj({ hora }) {
+  return <h3 className="clock">{hora}</h3>;
 }
 
 const RelojEffect = () => {
-  
-  const [hora, setHora] = useState(new Date().toLocaleTimeString())
-  const [esVisible, setEsVisible] = useState(false)
+  const [hora, setHora] = useState(new Date().toLocaleTimeString());
+  const [esVisible, setEsVisible] = useState(false);
 
-
-
-useEffect(() => {
-
+  useEffect(() => {
     let temporizador;
 
-//fase de montaje y fase de actualizacion
     if (esVisible) {
-
-        temporizador = setInterval(() => {setHora(new Date().toLocaleTimeString())}, 1000);
-        
+      temporizador = setInterval(() => {
+        setHora(new Date().toLocaleTimeString());
+      }, 1000);
     }
-//fase de desmontaje
 
-    return () => clearInterval(temporizador)
-
-  }, [esVisible])
-
+    return () => clearInterval(temporizador);
+  }, [esVisible]);
 
   return (
-   <>
-   <h2>Reloj con efecto</h2>
-   {/*RENDERIZADO CONDICIONAL Ó CONDITIONAL RENDER*/}
-   {
-    esVisible && <Reloj hora={hora}/>
-   }
+    <>
+      <h2 className="title">Reloj con efecto</h2>
+      {esVisible && <Reloj hora={hora} />}
+      <div className="button-container">
+        <button className="button start" onClick={() => setEsVisible(true)}>
+          Iniciar
+        </button>
+        <button className="button stop" onClick={() => setEsVisible(false)}>
+          Detener
+        </button>
+      </div>
 
-   <button onClick={() => setEsVisible(true)}>Iniciar</button>
-   <button onClick={() => setEsVisible(false)}>Detener</button>
-   </>
-  )
-}
+      <style jsx>{`
+        .title {
+          font-size: 1.8em;
+          color: #333;
+          margin-bottom: 15px;
+        }
 
-export default RelojEffect
+        .clock {
+          font-size: 2em;
+          font-weight: bold;
+          color: #0070f3;
+          margin: 20px 0;
+        }
+
+        .button-container {
+          display: flex;
+          gap: 10px;
+        }
+
+        .button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 1em;
+          cursor: pointer;
+          transition: background-color 0.3s, color 0.3s;
+        }
+
+        .start {
+          background-color: #0070f3;
+          color: #fff;
+        }
+
+        .stop {
+          background-color: #ff4d4d;
+          color: #fff;
+        }
+
+        .button:hover {
+          opacity: 0.9;
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default RelojEffect;
