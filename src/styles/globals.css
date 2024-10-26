@@ -87,3 +87,65 @@ a {
     opacity: 0.9;
   }
   
+  /*Reloj Digital*/
+
+  .title2 {
+    text-align: center;
+    color: #4a4a4a;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos del reloj digital */
+  .clock2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    color: #00ff8a;
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 255, 138, 0.5), 0px 0px 20px rgba(0, 255, 138, 0.2);
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
+  /* Botones */
+  .clock2 {
+    justify-content: center;
+  }
+  .button-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+  
+  .start2,
+  .stop2 {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .start2 {
+    background-color: #28a745;
+  }
+  
+  .stop2 {
+    background-color: #dc3545;
+  }
+  
+  .start2:hover {
+    background-color: #218838;
+  }
+  
+  .stop2:hover {
+    background-color: #c82333;
+  }

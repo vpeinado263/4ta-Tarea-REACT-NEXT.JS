@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function Reloj({ hora }) {
-  return <h3 className="clock">{hora}</h3>;
+  return <h3 className="clock2">{hora}</h3>;
 }
 
 const RelojEffect = () => {
@@ -22,13 +22,13 @@ const RelojEffect = () => {
 
   return (
     <>
-      <h2 className="title">Reloj con efecto</h2>
+      <h2 className="title2">Reloj Digital</h2>
       {esVisible && <Reloj hora={hora} />}
-      <div className="button-container">
-        <button className="button start" onClick={() => setEsVisible(true)}>
+      <div className="button-container2">
+        <button className="start2" onClick={() => setEsVisible(true)}>
           Iniciar
         </button>
-        <button className="button stop" onClick={() => setEsVisible(false)}>
+        <button className="stop2" onClick={() => setEsVisible(false)}>
           Detener
         </button>
       </div>
