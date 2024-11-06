@@ -17,8 +17,14 @@ const relojAnalogico = () => {
       <BooksContextProvider>
         <Navigation/>
         <ServiceBooks/>
+        <RelojEf/>
       </BooksContextProvider>
-      <RelojEf/>
+    
+
+      
+      <body className="bodyAnalogico">
+     
+      </body>
     </>
   )
 }

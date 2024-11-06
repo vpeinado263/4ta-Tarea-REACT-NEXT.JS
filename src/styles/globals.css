@@ -5,6 +5,11 @@ a {
 
 /*Reloj analógico*/
 
+.bodyAnalogico {
+  background-image: url(../../public/funds/analogico.jpg);
+  background-size: cover;
+}
+
 .clock-container {
     width: 200px;
     height: 200px;
@@ -96,7 +101,7 @@ a {
 }
   .digitalContainer {
     text-align: center;
-    color: #fdfdfd;
+    color: rgb(6, 1, 21);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
   }
