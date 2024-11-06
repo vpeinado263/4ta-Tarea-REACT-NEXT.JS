@@ -5,14 +5,12 @@ a {
   text-decoration: none;
 }
 
-/*Reloj analógico*/
-.bodyAnalogico {
+/*Reloj analógico colocar url en estilo propio*/
+.analogoContainer {
   background-image: url(../../public/funds/analogico.jpg);
-  background-size: cover;
-  height: 100vh;
 }
 
-/*Reloj Digital*/
+/*Reloj Digital colocar url en estilo propio*/
  .digitalContainer {
   background-image: url(../../public/funds/digital.jpg);
 }

@@ -92,9 +92,10 @@ const RelojEf = () => {
 
   return (
     <>
+    <div className="analogoContainer">
     <h2 className="title">Reloj Analógico</h2>
       {esVisible && <Reloj hora={hora} />}
-      <div className="button-container">
+     <div className="button-container">
         <button className="button start" onClick={() => setEsVisible(true)}>
           Iniciar
         </button>
@@ -102,8 +103,13 @@ const RelojEf = () => {
           Detener
         </button>
       </div>
+    </div>
 
-      <style jsx>{`
+    <style jsx>{`
+      .analogoContainer {
+        background-size: cover;
+        height: 100vh;
+      }
        .title {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 4rem;
@@ -136,7 +142,7 @@ const RelojEf = () => {
         background-color: rgb(170, 133, 83);
         opacity: 0.9;
       }
-      `}</style>
+    `}</style>
     </>
   );
 };
