@@ -1,4 +1,3 @@
-import Blog from "@/components/Blog";
 import Books from "@/components/Books";
 import Navigation from "@/components/Navigation";
 import BooksContextProvider, { BookContext } from "@/context/BooksContextProvider";
@@ -17,7 +16,6 @@ export default function Home() {
       <main>
            <Navigation/>
              <BooksContextProvider>
-                <Blog/>
                 <Books/>
              </BooksContextProvider>
       </main>

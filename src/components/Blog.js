@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import RelojEffect from "./RelojEffect";
+import RelojEf from "./Rolex";
 
 const Blog = () => {
   const [recurso, setRecurso] = useState("posteos");
@@ -6,8 +8,8 @@ const Blog = () => {
 
   // Colocamos los datos de cada seccion
   const datos = {
-    posteos: "Bienvenidos al blog sobre la creación del reloj. Aquí exploraremos los pasos para diseñar un reloj único.",
-    usuarios: "Autores destacados: Abraham-Louis Breguet, Christiaan Huygens, Daniel Quare, John Harwood, Franz Ketterer",
+    digital: <RelojEffect/>,
+    analogico: <RelojEf/>,
     comentarios: "comentarios: ¡Qué interesante! Me encantaría aprender más sobre la historia de los relojes.",
   };
 
@@ -18,8 +20,8 @@ const Blog = () => {
   return (
     <>
       <div className="button-container">
-        <button className="blog-button" onClick={() => setRecurso("posteos")}>Posteos</button>
-        <button className="blog-button" onClick={() => setRecurso("usuarios")}>Usuarios</button>
+        <button className="blog-button" onClick={() => setRecurso("digital")}>Digital</button>
+        <button className="blog-button" onClick={() => setRecurso("analogico")}>Analogico</button>
         <button className="blog-button" onClick={() => setRecurso("comentarios")}>Comentarios</button>
       </div>
       <h2 className="blog-title">{recurso.toUpperCase()}</h2>

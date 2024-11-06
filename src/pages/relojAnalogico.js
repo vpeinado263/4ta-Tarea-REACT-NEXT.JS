@@ -1,4 +1,5 @@
 
+import Blog from '@/components/Blog';
 import Navigation from '@/components/Navigation'
 import RelojEf from '@/components/Rolex';
 import BooksContextProvider from '@/context/BooksContextProvider';
@@ -19,6 +20,7 @@ const relojAnalogico = () => {
       <div className="bodyAnalogico">
         <Navigation/>
         <BooksContextProvider>
+          <Blog/>
           <RelojEf/>     
         </BooksContextProvider>
       </div>
