@@ -1,7 +1,22 @@
 import { useState, useEffect } from "react";
 
 function Reloj({ hora }) {
-  return <h3 className="clock2">{hora}</h3>;
+  
+   return (
+    <>
+    <h3 className="clock2">{hora}</h3>;
+   <style jsx>{`
+   .clock2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    color: rgb(1, 255, 255);
+    padding: 10px 20px;
+    justify-content: center;
+    text-align: center; 
+  }
+   `}</style>
+   </>
+   ) 
 }
 
 const RelojEffect = () => {
@@ -36,9 +51,14 @@ const RelojEffect = () => {
     </div>
 
     <style jsx>{`
+        .digitalContainer {
+        
+         background-size: cover;
+         height: 100vh;
+        }
         .titulo {
           text-align: center;
-          color: #fb0216;
+          color: rgb(7, 4, 25);
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-size: 3rem;
         }
