@@ -108,11 +108,11 @@ const RelojEf = () => {
     <style jsx>{`
       .analogoContainer {
         background-size: cover;
-        height: 100vh;
+        width: 30%;
       }
        .title {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 4rem;
+        font-size: 1rem;
         text-align: center;
         color: rgb(68, 62, 62);
       }

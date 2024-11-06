@@ -54,13 +54,13 @@ const RelojEffect = () => {
         .digitalContainer {
         
          background-size: cover;
-         height: 100vh;
+         width: 30%;
         }
         .titulo {
           text-align: center;
           color: rgb(7, 4, 25);
           font-family: Verdana, Geneva, Tahoma, sans-serif;
-          font-size: 3rem;
+          font-size: 1rem;
         }
        .clock2 {
          font-family: 'Courier New', Courier, monospace;
