@@ -1,5 +1,8 @@
 body {
   background-color: #260539;
+  background-image: url(../../public/funds/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 a {
   text-decoration: none;

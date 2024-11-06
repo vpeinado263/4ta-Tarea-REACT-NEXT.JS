@@ -1,6 +1,5 @@
 import Navigation from "@/components/atoms/Navigation";
 import Blog from "@/components/organisms/Blog";
-import BooksContextProvider from "@/context/BooksContextProvider";
 import Head from "next/head";
 
 
@@ -16,9 +15,8 @@ const tiposDeRelojes = () => {
       
       <div className="bodyAnalogico">
         <Navigation/>
-        <BooksContextProvider>
-          <Blog/>   
-        </BooksContextProvider>
+        <Blog/>   
+       
       </div>
     </>
   )

@@ -1,6 +1,8 @@
 import Navigation from "@/components/atoms/Navigation";
-import Books from "@/components/organisms/Books";
-import BooksContextProvider from "@/context/BooksContextProvider";
+import Clocks from "@/components/organisms/Clocks";
+
+import ClockContextProvider, { ClockContext } from "@/context/ClockContextProvider";
+
 import Head from "next/head";
 
 
@@ -16,9 +18,9 @@ export default function Home() {
 
       <main>
            <Navigation/>
-             <BooksContextProvider>
-                <Books/>
-             </BooksContextProvider>
+             <ClockContextProvider>
+                <Clocks/>
+             </ClockContextProvider>
       </main>
     </>
   );
