@@ -19,13 +19,18 @@ const Blog = () => {
 
   return (
     <>
+    <nav className="navbar">
+      <div className="navbar-title">Relojer</div>
       <div className="button-container">
         <button className="blog-button" onClick={() => setRecurso("digital")}>Digital</button>
         <button className="blog-button" onClick={() => setRecurso("analogico")}>Analogico</button>
         <button className="blog-button" onClick={() => setRecurso("comentarios")}>Comentarios</button>
-      </div>
+      </div>  
+    </nav>
+    <div className="content-container">
       <h2 className="blog-title">{recurso.toUpperCase()}</h2>
       <p className="blog-content">{contenido}</p>
+    </div>
     </>
   );
 };
