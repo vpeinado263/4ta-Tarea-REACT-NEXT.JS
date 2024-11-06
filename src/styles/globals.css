@@ -90,17 +90,22 @@ a {
   /*Reloj Digital*/
 
   .digitalContainer {
-    background-color: #00ff8a;
+    background-image: url(../../public/funds/digital.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: ;
+    
   }
 
   .title2 {
     text-align: center;
-    color: #4a4a4a;
+    color: #fdfdfd;
     font-family: Arial, sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
 
-    background-color: #218838;
+   
   }
   
   /* Estilos del reloj digital */
