@@ -1,7 +1,8 @@
-import Books from "@/components/Books";
-import Navigation from "@/components/Navigation";
-import BooksContextProvider, { BookContext } from "@/context/BooksContextProvider";
+import Navigation from "@/components/atoms/Navigation";
+import Books from "@/components/organisms/Books";
+import BooksContextProvider from "@/context/BooksContextProvider";
 import Head from "next/head";
+
 
 export default function Home() {
   return (

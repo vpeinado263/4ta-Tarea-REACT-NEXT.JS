@@ -1,7 +1,8 @@
-import Blog from "@/components/Blog";
-import Navigation from "@/components/Navigation";
+import Navigation from "@/components/atoms/Navigation";
+import Blog from "@/components/organisms/Blog";
 import BooksContextProvider from "@/context/BooksContextProvider";
 import Head from "next/head";
+
 
 const tiposDeRelojes = () => {
   return (

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import RelojEffect from "./RelojEffect";
-import RelojEf from "./Rolex";
+import RelojEffect from "../molecule/RelojEffect";
+import RelojEf from "../molecule/Rolex";
+
 
 const Blog = () => {
   const [recurso, setRecurso] = useState("digital");
