@@ -3,7 +3,7 @@ import RelojEffect from "./RelojEffect";
 import RelojEf from "./Rolex";
 
 const Blog = () => {
-  const [recurso, setRecurso] = useState("posteos");
+  const [recurso, setRecurso] = useState("digital");
   const [contenido, setContenido] = useState("");
 
   // Colocamos los datos de cada seccion
