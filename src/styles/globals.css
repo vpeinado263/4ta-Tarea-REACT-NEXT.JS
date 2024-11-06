@@ -89,12 +89,18 @@ a {
   
   /*Reloj Digital*/
 
+  .digitalContainer {
+    background-color: #00ff8a;
+  }
+
   .title2 {
     text-align: center;
     color: #4a4a4a;
     font-family: Arial, sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
+
+    background-color: #218838;
   }
   
   /* Estilos del reloj digital */
