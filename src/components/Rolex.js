@@ -46,7 +46,8 @@ const RelojEf = () => {
 
   return (
     <>
-      <h2 className="title">Reloj Analógico</h2>
+    <div className="anologicoContainer">
+    <h2 className="title">Reloj Analógico</h2>
       {esVisible && <Reloj hora={hora} />}
       <div className="button-container">
         <button className="button start" onClick={() => setEsVisible(true)}>
@@ -56,6 +57,7 @@ const RelojEf = () => {
           Detener
         </button>
       </div>
+    </div>
     </>
   );
 };

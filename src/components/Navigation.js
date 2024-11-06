@@ -21,7 +21,7 @@ const Navigation = () => {
           display: flex;
           align-items: center;
           font-family: 'Roboto', sans-serif;
-          background-color: blue;
+          background-color: transparent;
         }
         .sub {
           background: none;
