@@ -8,8 +8,11 @@ const Navigation = () => {
           <Link href="/">
             <span className="bar">Inicio</span>
           </Link>
-          <Link href="/relojPage">
+          <Link href="/relojAnalogico">
             <span className="bar">Reloj Analógico</span>
+          </Link>
+          <Link href="/relojDigital">
+            <span className="bar">Reloj Digital</span>
           </Link>
         </nav>
       </div>

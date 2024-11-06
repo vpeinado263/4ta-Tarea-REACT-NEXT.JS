@@ -13,17 +13,25 @@ const BooksContextProvider = (props) => {
 
       {
         id: 1,
-        title: "El señor de los Anillos"
+        title: "Abraham-Louis Breguet"
       },
 
       {
         id: 2,
-        title: "El club de las 5 de la mañana"
+        title: "Christiaan Huygens"
       },
 
       {
         id: 3,
-        title: "50 sombras de gray"
+        title: "Daniel Quare"
+      },
+      {
+        id: 4,
+        title: "John Harwood"
+      },
+      {
+        id: 5,
+        title: "Franz Ketterer"
       }
 
     ])
