@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import RelojEffect from "@/components/RelojEffect";
+import BooksContextProvider from "@/context/BooksContextProvider";
 
 
 import Head from "next/head";
@@ -15,20 +16,12 @@ const relojDigital = () => {
         <link rel="icon" href="/favicon.ico" />
        </Head>
 
-       <Navigation/>
-
-  
-       
-        <RelojEffect/>
-       
-        
-    
-
-      <body className="bodyDigital">
-     
-      </body>
-      
-      
+      <div className="bodyDigital">
+        <Navigation/>
+        <BooksContextProvider>
+          <RelojEffect/>     
+        </BooksContextProvider>
+      </div>
     </>
   )
 }

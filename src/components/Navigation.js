@@ -21,14 +21,14 @@ const Navigation = () => {
           display: flex;
           align-items: center;
           font-family: 'Roboto', sans-serif;
-          background-color: rgb(229, 229, 229);
+          background-color: blue;
         }
         .sub {
           background: none;
           border: none;
           cursor: pointer;
           display: flex;
-          gap: 20px; /* Espacio entre enlaces */
+          gap: 20px; 
           padding: 10px;
           text-decoration: none;
         }

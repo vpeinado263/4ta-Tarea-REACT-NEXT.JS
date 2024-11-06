@@ -1,4 +1,6 @@
-
+body {
+  background-color: #bbb6b6;
+}
 a {
   text-decoration: none;
 }
@@ -8,6 +10,7 @@ a {
 .bodyAnalogico {
   background-image: url(../../public/funds/analogico.jpg);
   background-size: cover;
+  height: 100vh;
 }
 
 .clock-container {
@@ -98,6 +101,7 @@ a {
  .bodyDigital {
   background-image: url(../../public/funds/digital.jpg);
   background-size: cover;
+  height: 100vh;
 }
   .digitalContainer {
     text-align: center;
