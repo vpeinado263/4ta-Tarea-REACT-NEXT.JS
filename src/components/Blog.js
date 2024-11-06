@@ -20,11 +20,11 @@ const Blog = () => {
   return (
     <>
     <nav className="navbar">
-      <div className="navbar-title">Relojer</div>
+      <div className="navbar-title">¿Quien creó el Reloj?</div>
       <div className="button-container">
-        <button className="blog-button" onClick={() => setRecurso("digital")}>Digital</button>
-        <button className="blog-button" onClick={() => setRecurso("analogico")}>Analogico</button>
-        <button className="blog-button" onClick={() => setRecurso("comentarios")}>Comentarios</button>
+        <button className="nav-button" onClick={() => setRecurso("digital")}>Digital</button>
+        <button className="nav-button" onClick={() => setRecurso("analogico")}>Analogico</button>
+        <button className="nav-button" onClick={() => setRecurso("comentarios")}>Comentarios</button>
       </div>  
     </nav>
     <div className="content-container">
