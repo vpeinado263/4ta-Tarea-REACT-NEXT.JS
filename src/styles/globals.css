@@ -13,19 +13,20 @@ a {
   height: 100vh;
 }
 
+
 .clock-container {
     width: 200px;
     height: 200px;
-    border: 8px solid #333;
+    border: 8px solid rgb(18, 18, 24);
     border-radius: 50%;
     position: relative;
     margin: 20px auto;
-    background: #fff;
+    background: rgb(240, 241, 243);
   }
   
   .hand {
     position: absolute;
-    background-color: #333;
+    background-color: rgb(76, 62, 68);
     transform-origin: bottom;
     bottom: 50%;
     left: 50%;
@@ -36,7 +37,7 @@ a {
   .second-hand {
     width: 2px;
     height: 90px;
-    background-color: #e63946;
+    background-color: #fb0216;
   }
   
   .minute-hand {
@@ -52,7 +53,7 @@ a {
   .center-point {
     width: 10px;
     height: 10px;
-    background-color: #333;
+    background-color: rgb(173, 113, 62);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,8 +62,10 @@ a {
   }
   
   .title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem;
     text-align: center;
-    color: #333;
+    color: rgb(68, 62, 62);
   }
   
   .button-container {
@@ -82,16 +85,17 @@ a {
   }
   
   .button.start {
-    background-color: #4caf50;
+    background-color: rgb(114, 81, 46);
     color: #fff;
   }
   
   .button.stop {
-    background-color: #e63946;
+    background-color: rgb(114, 81, 46);
     color: #fff;
   }
   
   .button:hover {
+    background-color: rgb(170, 133, 83);
     opacity: 0.9;
   }
   
