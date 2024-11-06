@@ -4,7 +4,7 @@ function Reloj({ hora }) {
   
    return (
     <>
-    <h3 className="clock2">{hora}</h3>;
+    <h3 className="clock2">{hora}</h3>
    <style jsx>{`
    .clock2 {
     font-family: 'Courier New', Courier, monospace;
