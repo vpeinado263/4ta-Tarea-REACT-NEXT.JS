@@ -6,7 +6,7 @@ const Navigation = () => {
       <div className="menu">
         <nav className="sub">
           <Link href="/">
-            <span className="bar">Inicio</span>
+            <span className="bar">Inicio / </span>
           </Link>
           <Link href="/relojAnalogico">
             <span className="bar">Reloj Analógico</span>
