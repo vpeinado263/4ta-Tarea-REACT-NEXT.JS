@@ -23,8 +23,8 @@ const RelojEffect = () => {
   return (
     <>
     <div className="digitalContainer">
-    <h2 className="title2">Reloj Digital</h2>
-      {esVisible && <Reloj hora={hora} />}
+    <h2>Reloj Digital</h2>
+       {esVisible && <Reloj hora={hora} />}
       <div className="button-container2">
         <button className="start2" onClick={() => setEsVisible(true)}>
           Iniciar

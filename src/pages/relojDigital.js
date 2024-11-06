@@ -15,11 +15,16 @@ const relojDigital = () => {
         <link rel="icon" href="/favicon.ico" />
        </Head>
 
-      <BooksContextProvider>
+       <BooksContextProvider>
         <Navigation/>
         <RelojEffect/>
         <ServiceBooks/>
       </BooksContextProvider>
+
+      <body className="bodyDigital">
+     
+      </body>
+      
       
     </>
   )
