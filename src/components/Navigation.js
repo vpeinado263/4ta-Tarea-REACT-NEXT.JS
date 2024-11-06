@@ -11,9 +11,6 @@ const Navigation = () => {
           <Link href="/tiposDeRelojes">
             <span className="bar">Tipos de Relojes</span>
           </Link>
-          <Link href="/relojDigital">
-            <span className="bar">Reloj Digital</span>
-          </Link>
         </nav>
       </div>
       <style jsx>{`
