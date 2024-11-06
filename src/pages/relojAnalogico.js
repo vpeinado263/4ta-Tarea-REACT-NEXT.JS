@@ -1,7 +1,9 @@
+
 import Navigation from '@/components/Navigation'
-import RelojEf from '@/components/Rolex'
-import ServiceBooks from '@/components/ServiceBooks'
-import BooksContextProvider from '@/context/BooksContextProvider'
+import RelojEf from '@/components/Rolex';
+import BooksContextProvider from '@/context/BooksContextProvider';
+
+
 import Head from 'next/head'
 
 const relojAnalogico = () => {
@@ -13,18 +15,13 @@ const relojAnalogico = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <BooksContextProvider>
-        <Navigation/>
-        <ServiceBooks/>
-        <RelojEf/>
-      </BooksContextProvider>
-    
-
       
-      <body className="bodyAnalogico">
-     
-      </body>
+      <div className="bodyAnalogico">
+        <Navigation/>
+        <BooksContextProvider>
+          <RelojEf/>     
+        </BooksContextProvider>
+      </div>
     </>
   )
 }
